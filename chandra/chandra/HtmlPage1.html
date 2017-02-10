@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/Script.js"></script>
+    <link href="scripts/bootstrap.css" rel="stylesheet" /> 
+	<meta charset="utf-8" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                <th>Id</th>
+                 <th>Name</th>
+                 <th>Rowkey</th>
+            <th>Partitionkey</th>
+              </tr>
+                </thead>
+            <tbody>
+                <tr ng-repeat="a in sri ">
+                    <td>{{a.Id}}</td>
+                    <td>{{a.Name}}</td>
+                    <td>{{a.PartitionKey}}</td>
+                    <td>{{a.RowKey}}</td>
+                    
+
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+
+
+
+
+    </div>
+
+</body>
+</html>
